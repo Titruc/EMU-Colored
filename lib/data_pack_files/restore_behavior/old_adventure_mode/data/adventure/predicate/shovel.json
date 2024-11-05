@@ -1,0 +1,32 @@
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "head": {
+                    "count": {
+                        "min": 1
+                    },
+                    "items": "#adventure:shovel"
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "predicates": {
+                            "minecraft:custom_data": "{adventure:1b}"
+                        }
+                    }
+                }
+            }
+        }
+    }
+]
