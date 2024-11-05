@@ -421,7 +421,7 @@ def fix_entity_folder(folder_path: Path, source_folder_path: Path, dimension: st
         fix_entity_file(file_path, source_folder_path / file_path.name, dimension)
 
 def fix_entity_file(file_path: Path, source_file_path: Path, dimension: str):
-    MK.printColoredWithoutNewLine(f" Fixing entities/","GREEN")
+    MK.printColoredWithoutNewLine(f" Fixing entities/","MAGENTA")
     MK.printColored(f"{file_path.name}","DEFAULT")
     
     global uuid_dict
